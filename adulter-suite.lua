@@ -419,7 +419,7 @@ function AdulterarUI.Window:New(config)
     table.insert(AdulterarUI.Windows, self)
     AdulterarUI.ActiveWindow = self
     
-    self:Notify({
+    AdulterarUI:Notify({
         Title = "UI Carregada",
         Message = string.format("%s iniciado com sucesso!", self.Name),
         Type = "success"
