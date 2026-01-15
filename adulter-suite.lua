@@ -721,7 +721,7 @@ function AdulterarUI.Window:CreateButton(config)
         
         local success, err = pcall(button.Callback)
         if not success then
-            self:Notify({
+            AdulterarUI:Notify({
                 Title = "Erro no Botão",
                 Message = err,
                 Type = "error"
